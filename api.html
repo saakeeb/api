@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <h2>JSON</h2>
+    <h4>JavaScript Object Notation</h4>
+
+
+
+
+
+    <script>
+        const user={ id:22, name: "Dipjol", 
+        nayikaName:{
+            nName1:"Purnima",
+            nName2:"Eshita",
+            nName3:"Tonima"
+        },
+        comedianAge:[52,58,63], 
+        comedianName:["Dildar", "ATM", "Kisingzar"]}
+
+        const userJSON=JSON.stringify(user);
+        console.log(userJSON);
+        //{"id":22,"name":"Dipjol"}
+
+        const userFromJSON=JSON.parse(userJSON);
+        console.log(userFromJSON);
+
+    </script>
+</body>
+</html>
